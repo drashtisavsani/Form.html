@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
+        integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- <h2 class="Logo">Logo</h2> -->
+        <i class="fa-solid fa-cloud fa-lg"> Cloud</i>
+
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <div class="btn">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 style="text-align: center;">Registation</h2><br>
+            <form>
+                <div class="inputbox">
+                    <span class="icon"></span>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"></span>
+                    <label for="date">Birth Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="inputbox" >
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"></span>
+                    <label for="number">Mobile No</label>
+                    <input type="mobileno" id="number" placeholder="Enter mobile no" required>
+                </div>
+                <div class="inputbox" >
+                    
+                    <label for="semester">Semester</label>
+                    <select name="sem" id="semester">
+                        <option value="default">sem</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="inputbox" >
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="create password" required>
+                    <span class="icon1" onclick="myFunction()">
+                        <ion-icon name="eye" id="hide1"></ion-icon>
+                        <ion-icon name="eye-off" id="hide2"></ion-icon>
+                    </span>
+                </div>
+                <div class="inputbox" >
+
+                    <label for="cpassword">Conform Password</label>
+                    <input type="password" id="cpassword" placeholder="reenter password" required>
+                    <span class="icon2" onclick="myFunction2()">
+                        <ion-icon name="eye" id="hide3"></ion-icon>
+                        <ion-icon name="eye-off" id="hide4"></ion-icon>
+                    </span>
+                </div>
+                <!-- <button type="submit" class="btn2">Submit</button> -->
+                <div class="btn2">
+                    <a href="#">Submit</a>
+                </div>
+                <div class="loginid">
+                    <p style="color: gray;">Already have account? <a href="#" style="color: white;">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("password")
+                var z = document.getElementById("hide1")
+                var y = document.getElementById("hide2")
+
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = block;
+                    z.style.display = none;
+                }
+                else{
+                    x.type = "password";
+                    y.style.display = none;
+                    z.style.display = block;
+                }
+            }
+        </script>
+        <script>
+            function myFunction2(){
+                var a = document.getElementById("cpassword")
+                var b = document.getElementById("hide3")
+                var c = document.getElementById("hide4")
+
+                if(a.type === 'password'){
+                    a.type = "text";
+                    b.style.display = block;
+                    c.style.display = none;
+                }
+                else{
+                    a.type = "password";
+                    b.style.display = none;
+                    c.style.display = block;
+                }
+            }
+        </script>
+    </main>
+
+
+
+</body>
+
+</html>
