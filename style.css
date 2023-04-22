@@ -176,12 +176,13 @@ form .loginid{
     position: absolute;
     padding-top: 3px;
 }
-#hide1{
+#passwordEye{
     display: none;
 }
-#hide3{
+#cpasswordEye{
     display: none;
 }
+
 .inputbox select{
     background: transparent;
 }

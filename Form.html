@@ -73,8 +73,8 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="create password" required>
                     <span class="icon1" onclick="myFunction()">
-                        <ion-icon name="eye" id="hide1"></ion-icon>
-                        <ion-icon name="eye-off" id="hide2"></ion-icon>
+                        <ion-icon name="eye" id="passwordEye"></ion-icon>
+                        <ion-icon name="eye-off" id="passwordEyeOff"></ion-icon>
                     </span>
                 </div>
                 <div class="inputbox" >
@@ -83,7 +83,7 @@
                     <input type="password" id="cpassword" placeholder="reenter password" required>
                     <span class="icon2" onclick="myFunction2()">
                         <ion-icon name="eye" id="hide3"></ion-icon>
-                        <ion-icon name="eye-off" id="hide4"></ion-icon>
+                        <ion-i  con name="eye-off" id="hide4"></ion-icon>
                     </span>
                 </div>
                 <!-- <button type="submit" class="btn2">Submit</button> -->
@@ -101,37 +101,37 @@
 
         <script>
             function myFunction(){
-                var x = document.getElementById("password")
-                var z = document.getElementById("hide1")
-                var y = document.getElementById("hide2")
+                var passwordField = document.getElementById("password")
+                var passwordEye = document.getElementById("passwordEye")
+                var passwordEyeOff = document.getElementById("passwordEyeOff")
 
-                if(x.type === 'password'){
-                    x.type = "text";
-                    y.style.display = block;
-                    z.style.display = none;
+                if(passwordField.type === 'password'){
+                    passwordField.type = "text";
+                    passwordEye.style.display = 'block';
+                    passwordEyeOff.style.display = 'none';
                 }
                 else{
-                    x.type = "password";
-                    y.style.display = none;
-                    z.style.display = block;
+                    passwordField.type = "password";
+                    passwordEye.style.display = 'none';
+                    passwordEyeOff.style.display = 'block';
                 }
             }
         </script>
         <script>
             function myFunction2(){
-                var a = document.getElementById("cpassword")
-                var b = document.getElementById("hide3")
-                var c = document.getElementById("hide4")
+                var cpasswordField = document.getElementById("cpassword")
+                var cpasswordEye = document.getElementById("cpasswordEye")
+                var cpasswordEyeOff = document.getElementById("cpasswordEyeOff")
 
-                if(a.type === 'password'){
-                    a.type = "text";
-                    b.style.display = block;
-                    c.style.display = none;
+                if(cpasswordField.type === 'password'){
+                    cpasswordField.type = "text";
+                    cpasswordEye.style.display ='block';
+                    c.style.display = 'none';
                 }
                 else{
-                    a.type = "password";
-                    b.style.display = none;
-                    c.style.display = block;
+                    cpasswordField.type = "password";
+                    cpasswordEye.style.display = 'none';
+                    cpasswordEyeOff.style.display = 'block';
                 }
             }
         </script>
