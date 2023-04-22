@@ -82,8 +82,8 @@
                     <label for="cpassword">Conform Password</label>
                     <input type="password" id="cpassword" placeholder="reenter password" required>
                     <span class="icon2" onclick="myFunction2()">
-                        <ion-icon name="eye" id="hide3"></ion-icon>
-                        <ion-i  con name="eye-off" id="hide4"></ion-icon>
+                        <ion-icon name="eye" id="cpasswordEye"></ion-icon>
+                        <ion-icon name="eye-off" id="cpasswordEyeOff"></ion-icon>
                     </span>
                 </div>
                 <!-- <button type="submit" class="btn2">Submit</button> -->
@@ -126,7 +126,7 @@
                 if(cpasswordField.type === 'password'){
                     cpasswordField.type = "text";
                     cpasswordEye.style.display ='block';
-                    c.style.display = 'none';
+                    cpasswordEyeOff.style.display = 'none';
                 }
                 else{
                     cpasswordField.type = "password";
